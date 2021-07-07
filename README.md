@@ -395,9 +395,9 @@ suite for testing roles. Playbooks can be tested by including them in the
 molecule playbook.
 
 Molecule is modular, so you must `cd` to the directory of the role you are
-testing.
+testing. (Make sure to activate the virtualenv at the root of the repo before `cd`ing)
 
-    $ cd roles/software/ckan/native-login
+    $ cd ansible/roles/software/ckan/inventory
     $ molecule test
 
 During development, you'll want to run only the converge playbook to avoid
